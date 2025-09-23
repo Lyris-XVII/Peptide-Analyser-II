@@ -36,9 +36,8 @@ class DNA():
     # Weight Method: Calcultes Molecular Weight
 
     def convert_1(self):
-        print("\nRNA Chain: ", end=""
-        )
-        print(self.chain.replace("t", "u"))
+        print("\nRNA Chain: ", end="")
+        print(self.chain.replace("t", "u"), end="")
     # Convert Method 1: Converts DNA Sequence To RNA Complement
 
     def convert_2(self):
@@ -269,20 +268,20 @@ def main():
 
         elif choice == "4":
             residue_choice = input("\nEnter Residue: ").strip().lower()
-            residue_choice.capitalize()
+            residue_choice = residue_choice.capitalize()
             residue = Residue(residue_choice)
             print(
             f"\nResidue: {residue.name()}"
             f"\n1-Letter Code: {residue.code()}"
             f"\nHydrophobicity: {residue.hydrophobicity()}"
-            f"\npI: {residue.pi():.2f}"
+            f"\npI: {residue.pi()}"
             f"\nMolecular Weight: {residue.weight():.2f} Da\n"
             )
         # Provides Information On Residue Input
 
         elif choice == "5":
             base_choice = input("\nEnter Base: ").strip().lower().capitalize()
-            base_choice.capitalize()
+            base_choice = base_choice.capitalize()
             base = Base(base_choice)
             print(
             f"\nBase: {base.name()}"
@@ -310,6 +309,7 @@ def main():
 
         elif choice == "8":
             rna_chain = input("\nEnter mRNA Sequence (Must Begin With A Valid Start Codon): ").strip().lower()
+            print("")
             result = RNA(rna_chain)
             result.convert()
             print("\n")
@@ -331,4 +331,3 @@ def main():
 if __name__ == "__main__":     
     main()
 # Runs Main If The Correct File Is Open
-
