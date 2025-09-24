@@ -323,11 +323,13 @@ def main():
         print("\nInput Error\n")
         # Catches Errors Neatly 
 
-    retry()
-    # Calls Retry Function
+    input("\nClick Enter To Continue: ")
+    main()
+    # To Continue
 # Main Function: Carries Out The Process
 
 
 if __name__ == "__main__":     
     main()
 # Runs Main If The Correct File Is Open
+
