@@ -3,8 +3,8 @@
 #### Video Demo: https://youtu.be/U8mVNs9ZtH0?si=zGJwcMlH6_t3ZP7D
 
 ## Requirements
-- **Python 3** – the program requires Python 3.10 or higher.  
-- **pyfiglet** – used for ASCII art titles in the menu. 
+- Python 3
+- `tabulate` libraryv
 
 ## Overview
 Peptide Analyser II is the expanded and upgraded version of the original Peptide Analyser. It now brings together DNA, RNA, peptide, base, and residue analysis in one interactive Python program. Whether you are a student, researcher, or just curious about molecular biology, this tool lets you explore sequences and molecules in a quick and intuitive way.
@@ -52,6 +52,7 @@ The program runs in the terminal with a simple menu system, giving you clear ins
 
 ## Menu Options
 When you run the program, you will see this menu
+
 
 
 
